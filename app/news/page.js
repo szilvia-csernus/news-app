@@ -6,7 +6,7 @@ export default function NewsPage() {
     <>
       <h1>News Page</h1>
 
-      <ul>
+      <ul className='news-list'>
         <li>
           <Link href={`/news/1`}>News Item 1</Link>
         </li>
