@@ -1,3 +1,6 @@
+// this backend server was used temporarily, so that Max could show how to fetch data from an external API.
+// Later on, we copied the sqlite database to the root folder and used the lib/news.js file to fetch data from the database.
+
 import express from 'express';
 import sqlite from 'better-sqlite3';
 import cors from 'cors';
