@@ -1,5 +1,6 @@
 import NewsList from "@/components/news-list";
 import {
+  getAllNews,
   getAvailableNewsMonths,
   getAvailableNewsYears,
   getNewsForYear,
@@ -56,9 +57,9 @@ async function FilteredNews({ year, month}) {
     news = await getNewsForYear(year);
   } else if (year && month) {
     news = await getNewsForYearAndMonth(year, month);
-  }
+  } else {}
 
-  let newsContent = <p>No news found for the selected filter!</p>;
+  let newsContent = <p>Select the year for archive news!</p>;
 
   if (news && news.length > 0) {
     newsContent = <NewsList news={news} />;
